@@ -5,3 +5,43 @@ html {
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+  
+  /* place the checkbox way off screen to not be visible BUT still accessible by someone using a keyboard or assistive technology. Preferred over display: none */
+  input.nav-toggle {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+  }
+  
+  /* if input.nav-toggle is checked then display the nav. 
+  ~ looks for any nav element that is preceded by the input.nav-toggle. */
+  input.nav-toggle:checked ~ nav {
+    display: block;
+  }
+  
+  /* display the label in mobile that has our hamburgur menu  */
+  label.nav-toggle-label {
+
+  }
+  
+  @media screen and (min-width: 60em) {
+    
+    /* hidden on screens above 960px (desktop) */
+    label.nav-toggle-label {
+      display: none;
+    }
+    
+    /* display the nav on screens above 60em */
+    nav {
+      display: block;
+    }
+
+  }
