@@ -10,13 +10,14 @@ html {
   }
 
   :root {
-    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
-    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
-    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
-    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+    --font-size-xs: clamp(0.64rem, 0.02vw + 0.64rem, 0.67rem);
+    --font-size-sm: clamp(0.8rem, 0.07vw + 0.79rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.14vw + 0.97rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.24vw + 1.2rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 0.4vw + 1.48rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 0.63vw + 1.83rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 0.96vw + 2.25rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 1.43vw + 2.77rem, 5rem);
   }
 
   h1 {
@@ -38,7 +39,7 @@ html {
   }
   
   small {
-    font-size: var( --font-size-sm);
+    font-size: var( --font-size-xs);
   }
 
   body {
@@ -99,7 +100,7 @@ html {
 
   footer {
     background-color: #80E3E5;
-    padding: 1em 1em 3em;
+    padding: 0.5em 1em 2em;
   }
 
   @media screen and (min-width: 48em) {
