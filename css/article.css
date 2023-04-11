@@ -5,4 +5,57 @@ html {
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+  main {
+    padding: 2em 3em;
+  }
+
+  #GlobalizationExamples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
+
+  #GlobalizationExamples ol {
+    list-style-type: disc;
+  }
+
+  #GlobalizationExamples img {
+    width: 50%;
+  }
+
   
+
+  .ExamplePhotoLeft .ExamplePhotoRight {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    padding: 0 3em 2em;
+    text-align: right;
+  }
+
+  aside a {
+    text-decoration: none;
+  }
+
+@media screen and (min-width: 38em) {
+
+    .ExamplePhotoLeft .ExamplePhotoRight {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ExamplePhotoLeft img {
+        grid-column: 1;
+    }
+
+    .ExamplePhotoLeft ol {
+        grid-column: 2;
+    }
+
+  }
+
+  @media screen and (min-width: 60em) {
+
+  }
