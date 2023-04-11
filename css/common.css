@@ -42,8 +42,8 @@ html {
 
   }
 
-  header img {
-    width: 15%;
+  header a img {
+    width: 30%;
     background-color: white;
     border-style: solid;
     border-width: thin;
@@ -67,3 +67,34 @@ html {
     padding: 1em 1em 3em;
   }
 
+  @media screen and (min-width: 38em) {
+
+    header a img {
+      width: 35%;
+    }
+  }
+
+  @media screen and (min-width: 60em) {
+
+    header a img {
+      width: 40%;
+    }
+
+    /* hidden on screens above 960px (desktop) */
+    label.nav-toggle-label {
+      display: none;
+    }
+    
+    /* display the nav on screens above 60em */
+    nav {
+      display: block;
+    }
+
+    nav ul {
+      flex-direction: row;
+    }
+
+    nav li {
+      padding: 0.5em;
+    }
+  }
