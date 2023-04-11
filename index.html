@@ -12,19 +12,22 @@
 <body>
 
     <header role="banner">
-        <img src="images/logo-full-colour.svg" alt="">
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><span class="material-icons-outlined">menu</span></label>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="top-banner">
+            <img src="images/logo-full-colour.svg" alt="">
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label"><span class="material-icons-outlined">menu</span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     
         <h1>Globalization and Our Lives</h1>
     </header>
@@ -39,24 +42,33 @@
         </section>
 
         <section id="Articles">
-            <div>
-                <img src="images/earth.jpg" alt="">
-                <h6>Article</h6>
-                <a href="html/article.html">How does globalization affect my daily life?</a>
-                <p>Globalization enables me to live the way I do. It is seen is the everyday objects around me: from what I eat, to what I use and what I enjoy. Every aspect of my life, from school and work to daily life and leisure is made possible because of the wide variety of products (and services) I can access. This is enabled by international trade and extensive transportation networks.</p>
-                <a href="html/article.html">Read more</a>
+            <h2>Featured Articles</h2>
+            <div class="ArticlesGrid">
+                <article class="Article">
+                    <a href="html/article.html">
+                        <img src="images/earth.jpg" alt="">
+                        <div class="ArticleInfo">
+                            <h5>Article</h5>
+                            <p>How does globalization affect my daily life?</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="Article">
+                    <a href="">
+                        <img src="images/adobe-creative.jpg" alt="">
+                        <div class="ArticleInfo">
+                            <h5>Article</h5>
+                            <p>Globalization and the future of graphic design</p>
+                        </div>
+                    </a>
+                </article>
+                
             </div>
             
-            <div>
-                <img src="images/adobe-creative.jpg" alt="">
-                <h6>Article</h6>
-                <a href="">Globalization and the future of graphic design</a>
-                <p>Rapidly changing technology is the reality of the graphic design industry. Businesses and consumers will become increasingly socially and environmentally conscious, thus sustainable design is the future of design. As the world becomes increasingly more inter-connected, cross-cultural collaboration will be the norm. Remote and hybrid work will also be more commonplace.</p>
-                <a href="">Read more</a>
-            </div>
         </section>
 
-        <section id="BlogPosts">
+        <section id="Blogposts">
             <img src="" alt="">
             <p>Check out my blog posts!</p>
             <div>
