@@ -20,6 +20,14 @@ html {
     text-align: right;
   }
 
+  aside span {
+    color: #113878;
+  }
+
   aside a {
     text-decoration: none;
+  }
+
+  aside span:hover {
+    color: #80E3E5;
   }

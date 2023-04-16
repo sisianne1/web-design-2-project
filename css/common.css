@@ -35,7 +35,7 @@ html {
   }
   
   h5 {
-    font-size: var( --font-size-base);
+    font-size: var( --font-size-sm);
   }
   
   small {
@@ -58,6 +58,15 @@ html {
 
   nav a {
     text-decoration: none;
+    color: #113878;
+  }
+
+  nav a:hover {
+    text-decoration: underline solid #2597CF 15%;
+  }
+
+  .nav-toggle-label span {
+    color: #113878;
   }
   
   /* place the checkbox way off screen to not be visible BUT still accessible by someone using a keyboard or assistive technology. Preferred over display: none */

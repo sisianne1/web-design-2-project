@@ -6,9 +6,17 @@ html {
     box-sizing: inherit;
   }
 
-
   header h1 {
     text-align: center;
+  }
+
+  main a {
+    color: #113878;
+    text-decoration: none;
+  }
+
+  main a:hover {
+    text-decoration: underline solid #80E3E5 15%;
   }
 
   #GlobalizationImages {
@@ -44,8 +52,11 @@ html {
     width: 100%;
   }
 
-  .ArticlesGrid a {
-    text-decoration: none;
+  .ArticleInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0 1em;
+    gap: 0.25em;
   }
 
   .Article a {
@@ -59,23 +70,29 @@ html {
   #Articles h5 {
     color: #2597CF;
     padding: 0 0.75em;
+    margin: 0;
   }
 
   #Articles p {
     padding: 0 0.75em;
+    margin: 0;
+    line-height: 1.25;
   }
   
   #Blogposts {
     margin: 0 2em;
   }
 
+  #BlogSectionTitle {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
   #Blogposts ul {
     list-style-type: none;
   }
   
-  #Blogposts a {
-    text-decoration: none;
-  }
 
   #Blogposts li {
     margin: 0.5em 0;
