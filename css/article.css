@@ -38,7 +38,13 @@ html {
     text-align: right;
   }
 
-  aside span {
+  aside a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  aside a {
     color: #113878;
   }
 
@@ -46,7 +52,7 @@ html {
     text-decoration: none;
   }
 
-  aside span:hover {
+  aside a:hover {
     color: #80E3E5;
   }
 
