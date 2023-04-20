@@ -10,9 +10,10 @@ html {
     padding: 2em 3em;
   }
 
-  .AuthorDate {
+  .AuthorDate p {
     font-size: var(--font-size-sm);
     padding: 0 0 1em;
+    line-height: 0.5;
   }
 
   aside {
